@@ -1,0 +1,55 @@
+#include "ThingSpeak.h"
+#include <WiFi.h>
+
+String ssidString = "RowdyHacks";                                                                  //network name
+String passString = "CtrlAttackDelete#24!";                                                                  //network password
+String myChannelNumberString = "2444814";                                                       //channel number
+String myWriteAPIKeyString = "MBZ8R59ZI71LHIN8";                                                         //channel write key
+char ssid[] = "";
+char pass[] = "";
+char myWriteAPIKey[17];
+const char* myWriteAPIKeyPointer = myWriteAPIKey;
+WiFiClient  client;
+unsigned long myChannelNumberInt;
+int number = 0;
+int buttonState;
+int x;
+
+#define BUTTON_PIN 2 
+
+struct touch { 
+	 byte wasPressed = LOW; 
+	 byte isPressed = LOW; 
+}; 
+
+touch touch; 
+
+void setup() 
+{ 
+	pinMode(BUTTON_PIN, INPUT); 
+	Serial.begin(115200); 
+  ThingSpeak.begin(client);
+  myChannelNumberInt = myChannelNumberString.toInt();
+  Serial.println("Finished setup");
+} 
+
+void loop() 
+{ 
+	 touch.isPressed = isTouchPressed(BUTTON_PIN); 
+	 if (touch.wasPressed != touch.isPressed) { 
+	   Serial.println("Touch pressed");
+     // Writing to ThingSpeak channel
+    //  ThingSpeak.writeField(myChannelNumberInt, 1, 1, myWriteAPIKeyPointer);
+   }
+   else
+   {
+    Serial.println("No touch");
+   }
+   delay(5000);
+	touch.wasPressed = touch.isPressed; 
+} 
+
+bool isTouchPressed(int pin) 
+{ 
+	 return digitalRead(pin) == HIGH; 
+} 
