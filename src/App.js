@@ -1,6 +1,7 @@
 import logo from './logo.svg';
 import './App.css';
-import { Alexa } from 'ask-sdk-jsx-for-react';
+// import { Alexa } from 'ask-sdk-jsx-for-react';
+import { SkillBuilders } from 'ask-sdk';
 
 function App() {
   return (
@@ -8,7 +9,7 @@ function App() {
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <div className="App">
-          <h1>My React App with Alexa Integration</h1>
+          {/* <h1>My React App with Alexa Integration</h1>
           <Alexa skillId="YOUR_SKILL_ID">
             <Alexa.Intent name="LaunchRequest">
               <Alexa.AddSpeechText>Hello! Welcome to Arthosaurus, 
@@ -16,7 +17,8 @@ function App() {
                 suffering with arthritis and other physical aliments. 
               </Alexa.AddSpeechText>
             </Alexa.Intent>
-          </Alexa>
+          </Alexa> */}
+          <div> </div>
         </div>
 
       </header>
