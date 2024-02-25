@@ -1,0 +1,405 @@
+/* Sets default fault of page to Courier New */
+body {
+    background-image: url(Beautiful-and-Minimalist-Presentation-Backgrounds-04.jpg);
+    background-size: cover;
+}
+
+/* --------------------------------------Controls Header formatting-------------------------------------------------------------- */
+
+/* Adjusts navbar height */
+.navbar-brand {
+
+    height: 70px;
+
+}
+
+/* Controls the header in the Navbar that says "Navbar" */
+header nav h1 {
+    font-size: 40px;
+    float: left;
+    color: rgb(161, 245, 217);
+    padding: 0px;
+    margin-bottom: 10px;
+    grid-row: 1/2;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bolder;
+    background-color: transparent;
+
+
+}
+
+/* Controls the navigation links that drop 
+down whenever you select the menu button */
+.nav-link {
+    float: right;
+    font-family: 'Courier New', Courier, monospace;
+
+}
+
+header h1 {
+    margin: 20px;
+    text-align: center;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: bold;
+    text-decoration: underline;
+    font-size: 50px;
+    color: rgba(53, 25, 9, 0.747);
+    text-decoration-color: rgba(54, 20, 0, 0.589);
+    -webkit-text-stroke: 1px rgba(54, 20, 0, 0.589);
+
+}
+
+/* ---------------------------------------Controls Header formatting-------------------------------------------------------------- */
+
+
+
+
+
+/* Main h1 formatting */
+main {
+    text-align: center;
+    font-weight: bolder;
+    padding: 20px;
+    margin: 20px;
+    font-family: monospace;
+
+}
+
+main img {
+
+    float: left;
+    border-radius: 50px 20px;
+    margin-left: 20px;
+    border: 10px inset;
+    border-color: rgba(55, 168, 159, 0.418);
+
+
+}
+
+#picInfo {
+    height: 100px;
+    width: 330px;
+    margin-left: 10px;
+    border-radius: 10px;
+    font-size: 15px;
+    background-color: rgba(161, 245, 217, 0.589);
+    position: relative;
+
+}
+
+figcaption {
+    float: left;
+    font-weight: lighter;
+    margin: 20px;
+    font-style: italic;
+    position: relative;
+    color: rgba(54, 20, 0, 0.589);
+
+}
+
+#instructions {
+    position: relative;
+    font-size: 25px;
+    line-height: 50px;
+    font-weight: normal;
+    float: right;
+    border: 20px solid;
+    padding: 15px;
+    margin: 10px;
+    border-radius: 10px;
+    background-color: rgba(161, 245, 217, 0.589);
+    border-image: url(39-394638_text-border-png-clipart.png) 25% round;
+
+}
+
+main p {
+    margin: 10px;
+    border-radius: 10px;
+    padding: 3px;
+    font-size: 25px;
+    line-height: 50px;
+    font-weight: normal;
+    background-color: rgba(161, 245, 217, 0.589);
+}
+
+#linkSection {
+    margin-bottom: 40px;
+    width: 700px;
+    height: 400px;
+    background-color: rgba(161, 245, 217, 0.589);
+    color: black;
+
+    font-size: 25px;
+    text-decoration: none;
+    text-align: start;
+    size: 300px;
+    border-radius: 20px;
+
+    line-height: 40px;
+    position: relative;
+
+}
+
+button {
+
+    text-align: center;
+    line-height: 20px;
+    border-radius: 20px;
+    color: rgb(0, 18, 56);
+    background-color: rgba(253, 255, 119, 0.459);
+
+}
+
+
+
+.card {
+
+    padding-left: 15px;
+    position: relative;
+    font-size: 25px;
+    font-family: monospace;
+    align-content: center;
+    width: 700px;
+    height: 400px;
+    border-radius: 20px;
+    text-align: left;
+
+}
+
+#dinoPic {
+    position: relative;
+    width: 600px;
+    height: 400px;
+    float: center;
+}
+
+#positions {
+
+    padding-left: 5px;
+    position: relative;
+    font-size: 15px;
+    text-align: left;
+    height: 200px;
+}
+
+.portfolioPics img {
+    height: 100%;
+    width: 85%;
+    padding: 10px;
+    border-radius: 0;
+    position: relative;
+
+
+
+}
+
+/* --------------------------------------------------------End of Main section formating--------------------------------------------- */
+
+
+
+
+
+/* ---------------------------------------------------------------Adaptive Mobile layouts------------------------------------------- */
+@media screen and (max-width: 290px) {
+    footer {
+        width: 290px;
+    }
+
+    header {
+        width: 290px;
+    }
+
+    .card {
+        width: 60%;
+
+    }
+
+
+}
+
+
+@media screen and (max-width: 400px) {
+    main {
+        text-align: center;
+        font-weight: bold;
+        padding: 0px;
+        margin: 0px;
+
+    }
+
+    main p {
+        position: relative;
+        font-size: 15px;
+    }
+
+    figcaption {
+
+        text-decoration: none;
+        font-size: 10px;
+        font-style: none;
+        line-height: 20px;
+        margin-left: 10px;
+        padding: 0px;
+        margin: 0px;
+        border-radius: 10px;
+        font-weight: lighter;
+        font-style: italic;
+        color: rgba(54, 20, 0, 0.589);
+    }
+
+    #picInfo {
+        text-decoration: none;
+        font-size: 10px;
+        font-style: none;
+        line-height: 20px;
+        margin-left: 10px;
+        width: 330px;
+        height: 50px;
+    }
+
+
+
+    #instructions {
+
+        font-size: 15px;
+        float: left;
+        font-size: 15px;
+        line-height: 18px;
+        width: 330px;
+        border: 1px;
+        border-image: none;
+        margin-left: 10px;
+
+    }
+
+    img {
+        position: relative;
+        border-radius: 100px;
+        float: left;
+        width: 320px;
+        height: 250px;
+        margin: 0px;
+        padding: 0px;
+    }
+
+    #linkSection {
+        width: 320px;
+        height: 180px;
+        line-height: 20px;
+        font-size: 15px;
+
+    }
+
+    .card {
+        width: 360px;
+        left: 10px;
+        height: 200px;
+        font-size: 5px;
+
+    }
+
+    #positions {
+
+        padding-left: 5px;
+        position: relative;
+
+        text-align: left;
+
+
+    }
+
+    #coresPic {
+        position: relative;
+        width: 310px;
+        height: 200px;
+        float: center;
+        border-width: 10px;
+    }
+
+    article p {
+        font-size: 15px;
+        line-height: 17px;
+    }
+
+    #contactForm {
+        width: 310px;
+        height: 250px;
+        margin-bottom: 40px;
+        font-size: 20px;
+        text-align: center;
+
+
+    }
+
+
+    footer {
+        width: 110%;
+    }
+
+    header {
+        width: 110%;
+    }
+
+}
+
+
+
+
+@media screen and (max-width: 640px) and (min-width: 410px) {
+    #linkSection {
+        width: 400px;
+        height: 300px;
+        line-height: 20px;
+        font-size: 15px;
+    }
+
+    .card {
+        width: 500px;
+        /* width: 150%; */
+        /* height: 280px; */
+    }
+
+    article {
+        width: 500px;
+    }
+
+    #positions {
+
+        padding-left: 5px;
+        position: relative;
+        font-size: 10px;
+        text-align: left;
+
+    }
+
+    #coresPic {
+        position: relative;
+        width: 300px;
+        height: 200px;
+        float: center;
+        border-width: 10px;
+        line-height: 10px;
+    }
+
+    header {
+        width: 150%;
+    }
+
+    footer {
+        width: 150%;
+    }
+}
+
+@media screen and (min-width: 650px) {
+    #coresPic {
+        clear: both;
+        display: block;
+    }
+
+    #article {
+        clear: both;
+        display: block;
+    }
+}
+
+/* -----------------------------------------------------------End of Mobile layout for  */
