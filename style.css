@@ -9,32 +9,11 @@ body {
 /* Adjusts navbar height */
 .navbar-brand {
 
-    height: 70px;
+    height: 80px;
 
 }
-
-/* Controls the header in the Navbar that says "Navbar" */
-header nav h1 {
-    font-size: 40px;
-    float: left;
-    color: rgb(161, 245, 217);
-    padding: 0px;
-    margin-bottom: 10px;
-    grid-row: 1/2;
-    font-family: 'Courier New', Courier, monospace;
-    font-weight: bolder;
-    background-color: transparent;
-
-
-}
-
 /* Controls the navigation links that drop 
 down whenever you select the menu button */
-.nav-link {
-    float: right;
-    font-family: 'Courier New', Courier, monospace;
-
-}
 
 header h1 {
     margin: 20px;
@@ -62,6 +41,7 @@ main {
     padding: 20px;
     margin: 20px;
     font-family: monospace;
+    width: 100%;
 
 }
 
@@ -87,15 +67,6 @@ main img {
 
 }
 
-figcaption {
-    float: left;
-    font-weight: lighter;
-    margin: 20px;
-    font-style: italic;
-    position: relative;
-    color: rgba(54, 20, 0, 0.589);
-
-}
 
 #instructions {
     position: relative;
@@ -142,11 +113,16 @@ main p {
 
 button {
 
+    align-self: start;
     text-align: center;
+    text-decoration: under;
+    font-size: 30px;
     line-height: 20px;
-    border-radius: 20px;
-    color: rgb(0, 18, 56);
-    background-color: rgba(253, 255, 119, 0.459);
+    border-radius: 10px;
+    width: 100%;
+    padding: 20px 20px 20px 20px;
+    color: rgb(0, 0, 0);
+    background-color: rgb(255, 255, 255);
 
 }
 
@@ -181,17 +157,26 @@ button {
     text-align: left;
     height: 200px;
 }
-
-.portfolioPics img {
-    height: 100%;
-    width: 85%;
-    padding: 10px;
-    border-radius: 0;
-    position: relative;
-
-
+container-fluid {
+    padding: 0px;
+    margin: 0px;
+    align-items: center;
 
 }
+
+.helpie{
+    display: flex; 
+    justify-content: center;
+    padding-left: 15px;
+    position: relative;
+    font-size: 25px;
+    font-family: monospace;
+    align-content: center;
+    height: 25%;
+    border-radius: 20px;
+    text-align: left;
+}
+
 
 /* --------------------------------------------------------End of Main section formating--------------------------------------------- */
 
@@ -274,7 +259,7 @@ button {
 
     img {
         position: relative;
-        border-radius: 100px;
+        border-radius: 0;
         float: left;
         width: 320px;
         height: 250px;
@@ -308,12 +293,12 @@ button {
 
     }
 
-    #coresPic {
+    #dinoPic {
         position: relative;
         width: 310px;
         height: 200px;
         float: center;
-        border-width: 10px;
+        border-width: 0px;
     }
 
     article p {
@@ -346,15 +331,16 @@ button {
 
 
 @media screen and (max-width: 640px) and (min-width: 410px) {
-    #linkSection {
-        width: 400px;
-        height: 300px;
-        line-height: 20px;
-        font-size: 15px;
+    main {
+        text-align: center;
+        font-weight: bold;
+        padding: 0px;
+        margin: 0px;
+
     }
 
     .card {
-        width: 500px;
+        width: 10%;
         /* width: 150%; */
         /* height: 280px; */
     }
@@ -372,12 +358,12 @@ button {
 
     }
 
-    #coresPic {
+    #dinoPic {
         position: relative;
         width: 300px;
         height: 200px;
         float: center;
-        border-width: 10px;
+        border-width: 0px;
         line-height: 10px;
     }
 
@@ -391,7 +377,7 @@ button {
 }
 
 @media screen and (min-width: 650px) {
-    #coresPic {
+    #dinoPic {
         clear: both;
         display: block;
     }
