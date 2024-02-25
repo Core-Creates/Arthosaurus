@@ -11,6 +11,6 @@ const LaunchRequestHandler: RequestHandler<HandlerInput, Response> = {
             .speak('Hello! Welcome to my Alexa-enabled React app.')
             .getResponse();
     },
-};
+
 
 export default LaunchRequestHandler;
