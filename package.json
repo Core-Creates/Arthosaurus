@@ -1,0 +1,12 @@
+{
+    "name": "arthosaurus",
+    "version": "1.0.0",
+    "description": "Description of your project",
+    "scripts": {
+        "start": "python server.py"
+    },
+    "requires": true,
+    "dependencies": {
+        
+    }
+}
